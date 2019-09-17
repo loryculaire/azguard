@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.0.3');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.crt-parallaxvideo {
+    min-height: 75vh;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.crt-parallaxvideo video {
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -100;
+    /*background-size: cover;*/
+}
+
+.crt-parallaxvideo h1 {
+    color: #1993A7;
+    /*font-size: 76px;*/
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    /*font-family: sans-serif;*/
+    font-size: 7vw;
+    /*margin: 0;*/
+}
+
+.crt-parallaxvideo h2 {
+    color: #1993A7;
+    /*font-size: 76px;*/
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    /*font-family: sans-serif;*/
+    font-size: 2vw;
+    /*margin: 0;*/
+}
+
+.crt-parallaxvideo a {
+    text-decoration: none;
+    color: #1993A7;
+}
+
+.plax.ccparallax-one {
+    background-image: url("../images/keyboard_hands.jpg");
+    height: 100vh;
+}
+
+.plax.ccparallax-two {
+    background-image: url("../images/keyboard_contrejour.png");
+    height: 50vh;
+}
+
+.plax:last-child {
+    margin-bottom: 0;
+}
+
+.plax.ccparallax {
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.plax.content {
+    background: none repeat scroll 0 0 #1993A7;
+    padding: 42px 0;
+    color: #FFF;
+}
+
+.plax.content.invert {
+    background: none repeat scroll 0 0 #FFF;
+    color: #1993A7;
+    padding: 42px 0;
+}
+
+.plax.content.invert h1 {
+    color: #1993A7;
+}
+
+.plax.ccparallax h1 {
+    font-weight: 700;
+    font-size: 7vw;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1993A7;
+}
+
+.plax.ccparallax h2 {
+    font-weight: 700;
+    font-size: 2vw;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1993A7;
+}
+
+.plax .headlines h2 {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 32px;
+    margin: 0;
+    text-align: center;
+}
+
+.plax .headlines h1 {
+    color: #fff;
+    /*font-family: sans-serif;*/
+    font-weight: 700;
+    font-size: 6vw;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.plax .headlines p {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    color: #f6f3f3;
+    text-align: center;
+}
+
+.plax .contentarea,
+.plax .contentarea h2 {
+    color: #FFF;
+}
+
+.plax a {
+    text-decoration: none;
+}
+
+@media all and (max-width: 600px) {
+    .plax .headlines h1 {
+        font-size: 7vw;
+    }
+    .plax .headlines h2 {
+        font-size: 3vw;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .crt-parallaxvideo {
+        display: none;
+    }
+    /*.plax.ccparallax-two {
+        background-image: url("../images/keyboard_contrejour.png");
+    }*/
+    .plax.ccparallax-one {
+        height: 500px;
+    }
+    #container_logo_azguard {
+        transform: translateY(5vh);
+    }
+}
+
+
+/*@media all and (min-width: 801px) {
+    .plax.ccparallax-two {
+        display: none;
+    }
+}*/

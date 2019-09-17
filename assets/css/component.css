@@ -1,0 +1,273 @@
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Effect 1: Bottom Line*/
+
+.creativenav_SF a {
+    font-size: 18px;
+    padding: 20px 50px;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+}
+
+.creativenav_SF a:hover,
+.creativenav_SF a:focus {
+    outline: none;
+    background: #b82e20;
+}
+
+.creativenav_SF a::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.1);
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    transform: translateY(10px);
+}
+
+.creativenav_SF a:hover::after,
+.creativenav_SF a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+
+/* Effect 2: Top To Bottom*/
+
+.creativenav_SD ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.creativenav_SD ul>li {
+    list-style: outside none none;
+}
+
+.creativenav_SD ul>li a {
+    color: #435a6b;
+    font-size: 18px;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding: 25px 0;
+    position: relative;
+    width: 20%;
+    float: left;
+    display: block;
+    overflow: hidden;
+    z-index: 1000;
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-transition: all 0.3s cubic-bezier(.75, .06, .27, .98);
+    -moz-transition: all 0.3s cubic-bezier(.75, .06, .27, .98);
+    -ms-transition: all 0.3s cubic-bezier(.75, .06, .27, .98);
+    -o-transition: all 0.3s cubic-bezier(.75, .06, .27, .98);
+    transition: all 0.3s cubic-bezier(.75, .06, .27, .98);
+    -webkit-box-shadow: inset 0px -3px 0px #435a6b, inset 0px 3px 0px #435a6b;
+    -moz-box-shadow: inset 0px -3px 0px #435a6b, inset 0px 3px 0px #435a6b;
+    box-shadow: inset 0px -3px 0px #435a6b, inset 0px 3px 0px #435a6b;
+}
+
+.creativenav_SD ul>li a:hover {
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: inset 0px -3px 0px rgba(255, 255, 255, 0.8), inset 0px 400px 0px #435a6b;
+    -moz-box-shadow: inset 0px -3px 0px rgba(255, 255, 255, 0.8), inset 0px 400px 0px #435a6b;
+    box-shadow: inset 0px -3px 0px rgba(255, 255, 255, 0.8), inset 0px 400px 0px #435a6b;
+}
+
+
+/* Effect 3: 3D Effect*/
+
+.creativenav_3D {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /*margin: 0;*/
+    /*padding: 0;*/
+}
+
+.creativenav_3D ul {
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+.creativenav_3D ul li {
+    display: inline-block;
+    list-style: outside none none;
+}
+
+.creativenav_3D a {
+    font-size: 12px;
+    /*padding: 8px 1px;*/
+    position: relative;
+    display: inline-block;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    /*letter-spacing: 1px;*/
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    margin: 0;
+}
+
+.creativenav_3D a {
+    color: #1993A7;
+    display: inline-block;
+    text-decoration: none;
+    overflow: hidden;
+    vertical-align: top;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    -ms-perspective: 600px;
+    perspective: 600px;
+    -webkit-perspective-origin: 50% 70%;
+    -moz-perspective-origin: 50% 70%;
+    -ms-perspective-origin: 50% 70%;
+    perspective-origin: 50% 70%;
+}
+
+.creativenav_3D a:hover span {
+    background: #1993A7;
+    -webkit-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+    -moz-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+    -ms-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+    transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+}
+
+.creativenav_3D a span {
+    display: block;
+    position: relative;
+    padding: 12px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.creativenav_3D a span:after {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 12px;
+    color: #fff;
+    background: #1993A7;
+    -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+    -moz-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+    -ms-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+    transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+}
+
+
+/* Effect 4: NO Effect*/
+
+.creativenav_no {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /*margin: 0;*/
+    /*padding: 0;*/
+}
+
+.creativenav_no ul {
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+.creativenav_no ul li {
+    display: inline-block;
+    list-style: outside none none;
+}
+
+.creativenav_no a {
+    font-size: 12px;
+    /*padding: 8px 1px;*/
+    position: relative;
+    display: inline-block;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    /*letter-spacing: 1px;*/
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    margin: 0;
+}
+
+.creativenav_no a {
+    color: #1993A7;
+    display: inline-block;
+    text-decoration: none;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.creativenav_no a:hover span {
+    background: #1993A7;
+    color: #fff;
+}
+
+.creativenav_no a span {
+    display: block;
+    position: relative;
+    padding: 12px;
+}
+
+.creativenav_3D a span:after {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 12px;
+    color: #fff;
+    background: #1993A7;
+}

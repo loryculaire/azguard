@@ -1,0 +1,303 @@
+/*
+Author URI: http://azguard.eu/
+Version: 1.0
+*/
+
+
+/* ----------------------------------------------------
+	GOOGLE FONTS
+-------------------------------------------------------
+font-family: 'Raleway', sans-serif;
+font-family: 'Lato', Arial, sans-serif;
+font-family: "PT Sans",sans-serif;
+------------------------------------------------------- */
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,500,600,300,200,100);
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.2.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-arrow-left:before {
+    content: "\f060";
+}
+
+.fa-edit:before,
+.fa-pencil-square-o:before {
+    content: "\f044";
+}
+
+
+/* ----------------------------------------------------
+	SKELETON
+------------------------------------------------------- */
+
+body {
+    background: #FFFFFF;
+    color: #000;
+    font-weight: 400;
+    font-size: 1.3em;
+    font-family: 'Lato', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* ----------------------------------------------------
+	WRAPPER
+------------------------------------------------------- */
+
+
+/*.wrapper{
+	margin:0 auto;	
+
+}*/
+
+section {
+    float: left;
+    width: 100%;
+}
+
+.divider {
+    height: 50px;
+}
+
+
+/* ----------------------------------------------------
+	LOGO AZGUARD
+---------------------------------------------------- */
+
+.logo_azguard {
+    width: 165px;
+    height: 150px;
+    /*border: solid black;*/
+}
+
+#logo_small_screen {
+    display: inline-block;
+}
+
+
+/* ----------------------------------------------------
+TITRE PRINCIPAL
+---------------------------------------------------- */
+
+#titre_principal {
+    font-size: 45px;
+    /*padding-right: 0px;*/
+    text-align: right;
+}
+
+#titre_principal_container {
+    transform: translateY(40px);
+    margin: 0;
+    padding: 0;
+}
+
+#titre_principal_container_box {
+    padding-right: 10px;
+    padding-left: 0px;
+}
+
+@media all and (max-width: 500px) {
+    #titre_principal {
+        font-size: 6.5vw;
+        text-align: center;
+    }
+    #titre_principal_container_box {
+        transform: translateY(10vh);
+    }
+}
+
+@media all and (max-width: 600px) {
+    #titre_principal {
+        text-align: center;
+    }
+    #titre_principal_container_box {
+        transform: translateY(10vh);
+    }
+}
+
+
+/* ----------------------------------------------------
+SWITCH NAV BAR
+---------------------------------------------------- */
+
+@media all and (max-width: 600px) {
+    .large_screen_nav_bar {
+        display: none;
+    }
+}
+
+@media all and (min-width: 601px) {
+    .small_screen_nav_bar {
+        display: none;
+    }
+}
+
+
+/* ----------------------------------------------------
+PARAGRAPHES ROW
+---------------------------------------------------- */
+
+#nous_contacter p {
+    color: #FFF;
+}
+
+#nous_contacter a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+
+/*.demo {
+    text-decoration: none;
+    color: #1993A7
+}*/
+
+
+/* ----------------------------------------------------
+IMAGES NOTRE TECH
+---------------------------------------------------- */
+
+.img_top {
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    /*border-bottom: 5px solid #FFFFFF;*/
+    /*padding-bottom: 1.3em;*/
+}
+
+.img_top img {
+    height: 100%;
+}
+
+#a_propos h2 {
+    border-top: 5px solid #FFFFFF;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 25px;
+}
+
+
+/* ----------------------------------------------------
+IMAGES PARTENAIRES
+---------------------------------------------------- */
+
+.image_logo {
+    /*border: 1px solid red;*/
+    margin: 1em 0;
+}
+
+.image_logo img {
+    width: auto;
+    max-height: 70px;
+    /*border: 1px solid yellow;*/
+}
+
+
+/* ----------------------------------------------------
+IMAGES PARTENAIRES
+---------------------------------------------------- */
+
+.photo_membre {
+    margin: 1em 0;
+}
+
+.photo_membre img {
+    width: auto;
+    max-height: 250px;
+}
+
+
+/* ----------------------------------------------------
+IMAGES FOOTER
+---------------------------------------------------- */
+
+.image_social {
+    margin: 1em 0;
+}
+
+.image_social img {
+    /*width: auto;*/
+    max-height: 30px;
+    filter: grayscale(1);
+}
+
+#logo_footer {
+    width: 160px;
+    height: 150px;
+    filter: grayscale(1);
+    /*border: solid black;*/
+}
+
+#liens a {
+    color: #FFFFFF;
+}
+
+#liens ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#copyright {
+    max-height: 40px;
+    padding: 1em;
+}
+
+#adresse2 a {
+    color: #FFFFFF;
+}
+
+.linkedin {
+    /*border: 1px solid red;*/
+    margin: 1.2em;
+}
+
+.linkedin img {
+    height: 20px;
+    width: 20px;
+    filter: grayscale(1);
+    /*border: 2px solid yellow;*/
+}
+
+
+/*
+Test
+*/
+
+#lien_mail {
+    color: #FFF;
+}
